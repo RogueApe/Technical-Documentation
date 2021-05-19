@@ -1,0 +1,109 @@
+html,
+body {
+  min-width: 290px;
+  color: #4d4e53;
+  background-color: #ffffff;
+  font-family: sans-serif;
+  line-height: 1.25;
+}
+
+/* Adjust the nav bar top left of the webpage */
+#navbar { 
+  position: fixed;
+  min-width: 290px;
+  top: 0px;
+  left: 10px;
+  width: 300px;
+  height: 100%;
+  border-right: solid;
+  border-color: rgba(0, 30, 30, 0.5);
+}
+
+header {
+  color: black;
+  margin: 10px;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: thin;
+}
+
+#main-doc header {
+  text-align: left;
+  margin: 5px;
+}
+
+#navbar ul {
+  height: 88%; 
+  padding: 0; /*this one set padding of bullet & the partition line at syntax below*/
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#navbar li {
+  color: #4d4e53;
+  border-top: 1px solid; /*this one create the line as partition of the category-->*/
+  list-style: none; /*this one hide the bullet*/
+  position: relative;
+  width: 100%;
+}
+
+#navbar a { /*this syntax position the nav bar at the webpage-->*/ 
+  display: block; 
+  padding: 10px 15px;
+  color: #4d4e53;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 110px;
+}
+
+section article {
+  color: #4d4e53;
+  margin: 15px;
+  font-size: 0.95em;
+}
+
+section li {
+  margin: 15px 0px 0px 15px;
+}
+
+
+
+/* For mobile phones: */
+
+@media only screen and (max-width: 815px) {
+  #navbar ul {
+    border: 1px solid;
+    height: 207px;
+  }
+  
+    #navbar {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #main-doc {
+    margin-left: -10px;
+  }

@@ -1,0 +1,141 @@
+<html>
+    <head>
+        <title>Technical Documentation</title>
+        <link rel=stylesheet href="style.css"/>
+    </head>
+    <nav id="navbar">
+        <header>Software Documentation</header>
+        <ul>
+          <!--Put # as "id" to link the paragraph in below -->
+          <li><a class="nav-link" href="#introduction">Introduction</a></li> 
+          <li><a class="nav-link" href="#requirement_documentation">Requirements documentation</a></li>
+          <li><a class="nav-link" href="#arch_design">Architecture design documentation</a></li>
+          <li><a class="nav-link" href="#technical_documentation">Technical Documentation</a></li>
+          <li><a class="nav-link" href="#user_doc">User documentation
+      </a></li>
+          <li><a class="nav-link" href="#agile_development">Documentation and agile development controversy</a></li>
+          <li><a class="nav-link" href="#marketing_documentation">Marketing documentation</a></li>
+          <li><a class="nav-link" href="#reference">Reference</a></li>
+        </ul>
+      </nav>
+      
+      <!-- Main content is below paragraph and need to put "id" in order to link to here when click the nav on above-->
+      <main id="main-doc"> 
+        <section class="main-section" id="introduction">
+          <header><h3>Introduction</header></h3>
+          <article>
+            <p><strong>Software documentation</strong> is written text or illustration that accompanies computer software or is embedded in the source code.</p>
+            <p> The documentation either explains how the software operates or how to use it, and may mean different things to people in different roles.</p>
+            
+            <ul>Documentation is an important part of software engineering. Types of documentation include:
+              <li>Requirements – Statements that identify attributes, capabilities, characteristics, or qualities of a system. This is the foundation for what will be or has been implemented.</li>
+              <li>Architecture/Design – Overview of software. Includes relations to an environment and construction principles to be used in design of software components.</li>
+              <li>Technical – Documentation of code, algorithms, interfaces, and APIs.</li>
+              <li>End user – Manuals for the end-user, system administrators and support staff.</li>
+              <li>Marketing – How to market the product and analysis of the market demand.</li>
+            </ul>
+          </article>
+        </section>
+        
+        <section class="main-section" id="requirement_documentation">
+          <header><h3>Requirement documentation</header></h3>
+          <article>
+            <p>Requirements documentation is the description of what a particular software does or shall do. It is used throughout development to communicate how the software functions or how it is intended to operate.</p>
+            <p>It is also used as an agreement or as the foundation for agreement on what the software will do. Requirements are produced and consumed by everyone involved in the production of software, including: end users, customers, project managers, sales, marketing, software architects, usability engineers, interaction designers, developers, and testers.</p>
+            <p>Requirements comes in a variety of styles, notations and formality. Requirements can be goal-like (e.g., distributed work environment), close to design (e.g., builds can be started by right-clicking a configuration file and select the 'build' function), and anything in between. They can be specified as statements in natural language, as drawn figures, as detailed mathematical formulas, and as a combination of them all.</p>
+            <p>The variation and complexity of requirements documentation makes it a proven challenge. Requirements may be implicit and hard to uncover. It is difficult to know exactly how much and what kind of documentation is needed and how much can be left to the architecture and design documentation, and it is difficult to know how to document requirements considering the variety of people who shall read and use the documentation. Thus, requirements documentation is often incomplete (or non-existent). Without proper requirements documentation, software changes become more difficult — and therefore more error prone (decreased software quality) and time-consuming (expensive).</p>
+            <p>Traditionally, requirements are specified in requirements documents (e.g. using word processing applications and spreadsheet applications). To manage the increased complexity and changing nature of requirements documentation (and software documentation in general), database-centric systems and special-purpose requirements management tools are advocated.</p>
+          </article>
+        </section>
+        
+        <section class="main-section" id="arch_design">
+          <header><h3>Architecture design documentation</h3></header>
+          <article>
+            <p>Architecture documentation (also known as software architecture description) is a special type of design document. In a way, architecture documents are third derivative from the code (design document being second derivative, and code documents being first).<p/>
+            <p>A very important part of the design document in enterprise software development is the Database Design Document (DDD). It contains Conceptual, Logical, and Physical Design Elements. </p>
+            <p>The DDD includes the formal information that the people who interact with the database need. The purpose of preparing it is to create a common source to be used by all players within the scene. The potential users are:</p>
+            <ul>
+              <li>Database designer</li>
+              <li>Database developer</li>
+              <li>Database administrator</li>
+              <li>Application designer</li>
+              <li>Application developer</li>
+            </ul>
+            <p>When talking about Relational Database Systems, the document should include following parts:</p>
+            <ul>Entity - Relationship Schema (enhanced or not), including following information and their clear definitions:
+              <li>Entity Sets and their attributes</li>
+              <li>Relationships and their attributes</li>
+              <li>Candidate keys for each entity set</li>
+              <li>Attribute and Tuple based constraints
+      </li>
+            </ul>
+            <ul>Relational Schema, including following information:
+      
+              <li>Tables, Attributes, and their properties
+      </li>
+              <li>Views</li>
+              <li>Constraints such as primary keys, foreign keys,
+      </li>
+              <li>Cardinality of referential constraints
+      </li>
+              <li>Cascading Policy for referential constraints
+      </li>
+              <li>Primary keys
+      </li>
+            </ul>
+            <p>It is very important to include all information that is to be used by all actors in the scene. It is also very important to update the documents as any change occurs in the database as well.</p>
+          </article>
+        </section>
+       
+        <section class="main-section" id="technical_documentation">
+          <header><h3>Technical documentation</h3></header>
+          <article>
+            <p>It is important for the code documents associated with the source code (which may include README files and API documentation) to be thorough, but not so verbose that it becomes overly time-consuming or difficult to maintain them. Various how-to and overview documentation guides are commonly found specific to the software application or software product being documented by API writers. This documentation may be used by developers, testers, and also end-users.</p>
+            <p>Today, a lot of high-end applications are seen in the fields of power, energy, transportation, networks, aerospace, safety, security, industry automation, and a variety of other domains.Technical documentation has become important within such organizations as the basic and advanced level of information may change over a period of time with architecture changes.</p>
+            <p>Code documents are often organized into a reference guide style, allowing a programmer to quickly look up an arbitrary function or class.</p>
+          </article>
+        </section>
+       
+        <section class="main-section" id="user_doc">
+          <header><h3>User documentation
+      </h3></header>
+          <article>
+            <p>Unlike code documents, user documents simply describe how a program is used.</p>
+            <p>In the case of a software library, the code documents and user documents could in some cases be effectively equivalent and worth conjoining, but for a general application this is not often true.</p>
+            <p>Typically, the user documentation describes each feature of the program, and assists the user in realizing these features. A good user document can also go so far as to provide thorough troubleshooting assistance. It is very important for user documents to not be confusing, and for them to be up to date. User documents don't need to be organized in any particular way, but it is very important for them to have a thorough index. Consistency and simplicity are also very valuable. User documentation is considered to constitute a contract specifying what the software will do. API Writers are very well accomplished towards writing good user documents as they would be well aware of the software architecture and programming techniques used. See also technical writing.</p>
+            <ol>User documentation can be produced in a variety of online and print formats.However, there are three broad ways in which user documentation can be organized.
+              <li><strong>Tutorial:</strong> A tutorial approach is considered the most useful for a new user, in which they are guided through each step of accomplishing particular tasks.</li>
+              <li><strong>Thematic:</strong> A thematic approach, where chapters or sections concentrate on one particular area of interest, is of more general use to an intermediate user. Some authors prefer to convey their ideas through a knowledge based article to facilitate the user needs. This approach is usually practiced by a dynamic industry, such as Information technology, where the user population is largely correlated with the troubleshooting demands.</li>
+              <li><strong>List or Reference:</strong> The final type of organizing principle is one in which commands or tasks are simply listed alphabetically or logically grouped, often via cross-referenced indexes. This latter approach is of greater use to advanced users who know exactly what sort of information they are looking for.</li>
+            <ol>
+              <p>A common complaint among users regarding software documentation is that only one of these three approaches was taken to the near-exclusion of the other two. It is common to limit provided software documentation for personal computers to online help that give only reference information on commands or menu items. The job of tutoring new users or helping more experienced users get the most out of a program is left to private publishers, who are often given significant assistance by the software developer.</p>
+          </article>
+        </section>
+        
+        <section class="main-section" id="agile_development">
+          <header><h3>Documentation and agile development controversy</h3></header>
+          <article>
+            <p>"The resistance to documentation among developers is well known and needs no emphasis." This situation is particularly prevalent in agile software development because these methodologies try to avoid any unnecessary activities that do not directly bring value. Specifically, the Agile Manifesto advocates valuing "working software over comprehensive documentation", which could be interpreted cynically as "We want to spend all our time coding. Remember, real programmers don't write documentation."</p>
+            <p>A survey among software engineering experts revealed, however, that documentation is by no means considered unnecessary in agile development. Yet it is acknowledged that there are motivational problems in development, and that documentation methods tailored to agile development (e.g. through Reputation systems and Gamification) may be needed.</p>
+          </article>
+        </section>
+        <section class="main-section" id="marketing_documentation">
+          <header><h3>Marketing documentation</h3></header>
+          <article>
+            <p>For many applications it is necessary to have some promotional materials to encourage casual observers to spend more time learning about the product. This form of documentation has three purposes:</p>
+            <ol>
+              <li>To excite the potential user about the product and instill in them a desire for becoming more involved with it.</li>
+              <li>To inform them about what exactly the product does, so that their expectations are in line with what they will be receiving.</li>
+              <li>To explain the position of this product with respect to other alternatives.</li>
+            </ol>
+          </article>
+        </section>
+            <section class="main-section" id="reference">
+              <header><h3>Reference</h3></header>
+              <article>
+                <ul>
+                  <li>All the documentation in this page is taken from <a href="https://en.wikipedia.org/wiki/Software_documentation#:~:text=Software%20documentation%20is%20written%20text,to%20people%20in%20different%20roles.">Wikipedia</a>.</li>
+              </article>
+            </section>
+      </main>
+</html>
